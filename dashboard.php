@@ -191,32 +191,6 @@ $recent = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </section>
 
-    <!-- Filters -->
-    <div class="filter-box">
-        <select id="categoryFilter">
-            <option value="">All Categories</option>
-            <?php foreach($categoryTotals as $c): ?>
-                <option><?= htmlspecialchars($c['category']) ?></option>
-            <?php endforeach; ?>
-        </select>
-
-        <select id="monthFilter">
-            <option value="">All Months</option>
-            <?php
-            for($m = 1; $m <= 12; $m++){
-                echo "<option value='$m'>".date("F", mktime(0, 0, 0, $m, 1))."</option>";
-            }
-            ?>
-        </select>
-
-        <div class="date-range" style="display:flex; gap:6px; align-items:center;">
-            <input type="date" id="startDate" style="flex:1;">
-            <span>to</span>
-            <input type="date" id="endDate" style="flex:1;">
-        </div>
-
-        <button onclick="applyFilter()">Filter</button>
-    </div>
 
     <!-- Recent Expenses -->
     <section class="card">

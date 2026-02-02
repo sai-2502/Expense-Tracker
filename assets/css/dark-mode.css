@@ -1,0 +1,186 @@
+/* Profile page text and layout improvements in dark mode */
+body.dark .card, body.dark-mode .card {
+    color: #f3f4f6;
+}
+body.dark .card input,
+body.dark .card textarea,
+body.dark .card button,
+body.dark .card label,
+body.dark .card h2,
+body.dark .card h3,
+body.dark .card form,
+body.dark .card .fa-envelope,
+body.dark .card .fa-upload {
+    color: #f3f4f6 !important;
+}
+body.dark .card input,
+body.dark .card textarea {
+    background: #23272f;
+    border: 1px solid #374151;
+}
+body.dark .card button {
+    background: #374151;
+    color: #f3f4f6;
+    border: 1px solid #23272f;
+}
+body.dark .card button:hover {
+    background: #4a90e2;
+    color: #fff;
+}
+body.dark .avatar {
+    border: 3px solid #374151 !important;
+}
+body.dark .profile-email {
+    color: #f3f4f6 !important;
+}
+/* Textarea dark mode */
+body.dark textarea,
+body.dark-mode textarea {
+    background: #23272f;
+    color: #f3f4f6;
+    border: 1px solid #374151;
+}
+body.dark textarea::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #a1a1aa;
+}
+/* Dark mode base */
+body.dark, body.dark-mode {
+    background: #181a20;
+    color: #f3f4f6;
+}
+
+/* Card and container backgrounds */
+body.dark .card,
+body.dark-mode .card,
+body.dark .main-wrapper,
+body.dark-mode .main-wrapper {
+    background: #23272f;
+    color: #f3f4f6;
+    border-color: #23272f;
+}
+
+/* Table */
+body.dark .table,
+body.dark-mode .table {
+    background: #23272f;
+    color: #f3f4f6;
+}
+body.dark .table th,
+body.dark-mode .table th {
+    background: #23272f;
+    color: #f3f4f6;
+    border-bottom: none;
+}
+body.dark .table td,
+body.dark-mode .table td {
+    background: #23272f;
+    color: #f3f4f6;
+    border-bottom: none;
+}
+
+/* Inputs and selects */
+body.dark input,
+body.dark select,
+body.dark-mode input,
+body.dark-mode select {
+    background: #23272f;
+    color: #f3f4f6;
+    border: 1px solid #374151;
+}
+body.dark input::placeholder,
+body.dark-mode input::placeholder {
+    color: #a1a1aa;
+}
+
+/* Buttons */
+body.dark button,
+body.dark-mode button,
+body.dark .btn,
+body.dark-mode .btn {
+    background: #374151;
+    color: #f3f4f6;
+    border: 1px solid #23272f;
+}
+body.dark button:hover,
+body.dark-mode button:hover,
+body.dark .btn:hover,
+body.dark-mode .btn:hover {
+    background: #4a90e2;
+    color: #fff;
+}
+
+/* Sidebar/nav */
+body.dark .sidebar,
+body.dark-mode .sidebar {
+    background: #23272f;
+    color: #f3f4f6;
+    border-right: 1px solid #23272f;
+}
+body.dark .sidebar a,
+body.dark-mode .sidebar a {
+    color: #f3f4f6;
+}
+body.dark .sidebar a.active,
+body.dark-mode .sidebar a.active {
+    background: #181a20;
+    color: #4a90e2;
+}
+
+/* Filter box */
+body.dark .filter,
+body.dark-mode .filter {
+    background: #23272f;
+    color: #f3f4f6;
+    border: none !important;
+}
+
+/* Misc */
+body.dark .action-icon,
+body.dark-mode .action-icon {
+    color: #f3f4f6;
+}
+body.dark .danger,
+body.dark-mode .danger {
+    color: #f87171;
+}
+body.dark .add-btn,
+body.dark-mode .add-btn {
+    background: #374151;
+    color: #f3f4f6;
+}
+body.dark .add-btn:hover,
+body.dark-mode .add-btn:hover {
+    background: #4a90e2;
+    color: #fff;
+}
+
+/* Table wrapper scroll */
+body.dark .table-wrapper,
+body.dark-mode .table-wrapper {
+    background: #23272f;
+}
+
+/* Budget warning/message */
+body.dark .budget-warning-msg,
+body.dark-mode .budget-warning-msg {
+    background: #3b2f1e;
+    color: #facc15;
+    border-color: #fde68a;
+}
+
+/* Progress bar */
+body.dark .budget-progress-bar,
+body.dark-mode .budget-progress-bar {
+    background: #374151;
+}
+body.dark .budget-progress-bar-inner,
+body.dark-mode .budget-progress-bar-inner {
+    background: #4a90e2;
+}
+
+/* Theme toggle sun icon black in dark mode */
+body.dark #themeToggleBox .fa-sun,
+body.dark-mode #themeToggleBox .fa-sun {
+    color: #111 !important;
+}

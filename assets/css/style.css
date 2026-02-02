@@ -1,0 +1,196 @@
+/* Filter input fields dark mode */
+body.dark input[type="date"],
+body.dark select#categoryFilter,
+body.dark select#monthFilter,
+body.dark .filter-box select,
+body.dark .filter-box input[type="date"] {
+	background: #23272f;
+	color: #f3f4f6;
+	border: 1px solid #374151;
+}
+body.dark .filter-box input[type="date"]::placeholder {
+	color: #a1a1aa;
+}
+/* Budget and warn input fields dark mode */
+body.dark input[name="monthly_budget"],
+body.dark input[name="budget_warn_limit"] {
+	background: #23272f;
+	color: #f3f4f6;
+	border: 1px solid #374151;
+}
+body.dark input[name="monthly_budget"]::placeholder,
+body.dark input[name="budget_warn_limit"]::placeholder {
+	color: #a1a1aa;
+}
+.action-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: none;
+	color: var(--primary);
+	font-size: 1.25em;
+	margin: 0 4px;
+	padding: 6px 10px;
+	cursor: pointer;
+	border-radius: 6px;
+	transition: color 0.2s, background 0.2s, box-shadow 0.2s, transform 0.15s;
+	box-shadow: none;
+}
+.action-icon.edit {
+	color: var(--primary);
+}
+
+.action-icon.delete {
+	color: var(--danger);
+}
+
+/* Theme variables */
+/*
+ * Font Awesome 6 CDN (add to your HTML <head> if not already present):
+ * <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ * Use <i class="fa-solid fa-moon"></i> and <i class="fa-solid fa-sun"></i> for theme toggle icons.
+ */
+ 
+:root {
+	--bg-main: #f4f6fa;
+	--bg-card: #fff;
+	--text-main: #222;
+	--border-main: #e5e7eb;
+	--shadow-main: 0 6px 32px rgba(44,62,80,0.10), 0 1.5px 6px rgba(44,62,80,0.04);
+	--primary: #4a90e2;
+	--danger: #ef4444;
+
+
+.card, .right-panel {
+	background: var(--bg-card);
+	color: var(--text-main);
+	border-color: var(--border-main);
+	box-shadow: var(--shadow-main);
+	transition: background 0.3s, color 0.3s, border 0.3s;
+}
+	--primary-hover: #3182ce;
+	--danger-hover: #c53030;
+	--input-bg: #232a36;
+	--input-border: #374151;
+	--input-focus: #60a5fa;
+	--link: #60a5fa;
+	--link-hover: #3182ce;
+
+/* Dark mode variables */
+.dark-mode {
+	--bg-main: #181c23;
+	--bg-card: #232a36;
+	--text-main: #f3f6fa;
+	--border-main: #2d3748;
+	--shadow-main: 0 6px 32px rgba(0,0,0,0.25), 0 1.5px 6px rgba(0,0,0,0.10);
+	--primary: #60a5fa;
+	--danger: #f87171;
+	--primary-hover: #3182ce;
+	--danger-hover: #c53030;
+	--input-bg: #232a36;
+	--input-border: #374151;
+	--input-focus: #60a5fa;
+	--link: #60a5fa;
+	--link-hover: #3182ce;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+	position: absolute;
+	top: 18px;
+	right: 28px;
+	background: none;
+	border: none;
+	font-size: 1.5em;
+	color: var(--primary);
+	cursor: pointer;
+	z-index: 2000;
+	transition: color 0.2s;
+}
+.theme-toggle:focus {
+	outline: 2px solid var(--primary);
+}
+
+/* Sun/Moon icon styles */
+.theme-toggle .fa-sun {
+	display: none;
+}
+.dark-mode .theme-toggle .fa-sun {
+	display: inline;
+}
+.dark-mode .theme-toggle .fa-moon {
+	display: none;
+}
+.theme-toggle .fa-moon {
+	display: inline;
+}
+/* simple responsive modern-ish styling */
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+body{margin:0;background:#f4f6f9;color:#111}
+.topbar{background:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.topbar nav a{margin-left:10px;text-decoration:none;color:#333}
+.container{max-width:1100px;margin:20px auto;padding:0 16px}
+.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(22,28,37,.06);margin-bottom:16px}
+.grid-two{display:grid;grid-template-columns:1fr 300px;gap:16px}
+.centered{display:flex;min-height:100vh;align-items:center;justify-content:center;background:#eef2f6}
+.card.small{width:420px}
+input,textarea,select{width:100%;padding:10px;margin:8px 0;border:1px solid #e2e8f0;border-radius:6px}
+button{padding:10px 14px;border-radius:8px;border:0;background:#2563eb;color:#fff;cursor:pointer}
+button.danger {
+	background: #ef4444;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 14px;
+	font-weight: 600;
+	transition: background 0.2s, box-shadow 0.2s;
+	box-shadow: 0 2px 8px rgba(239,68,68,0.08);
+}
+button.danger:hover, button.danger:focus {
+	background: #b91c1c;
+	outline: none;
+}
+@media (max-width: 600px) {
+	button.danger {
+		width: 100%;
+		margin-top: 8px;
+		font-size: 16px;
+	}
+}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:8px;border-bottom:1px solid #eee}
+.avatar{width:80px;height:80px;border-radius:999px;object-fit:cover}
+.error{background:#ffe7e7;color:#b42318;padding:8px;border-radius:6px}
+.btn{display:inline-block;padding:8px 12px;margin:6px 0;background:#10b981;color:#fff;border-radius:8px;text-decoration:none}
+@media(max-width:800px){.grid-two{grid-template-columns:1fr}
+.card.small{width:100%}}
+
+/* Effective layout for chart type select */
+                .chart-type-select {
+                    min-width: 80px;
+                    max-width: 110px;
+                    width: 100px;
+                    padding: 5px 8px;
+                    border-radius: 7px;
+                    font-size: 1em;
+                    border: 1px solid #d1d5db;
+                    background: #fff;
+                    color: #222;
+                    transition: border-color 0.15s;
+                    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+                }
+                .chart-type-select:focus {
+                    border-color: #4a90e2;
+                    outline: none;
+                }
+                body.dark .chart-type-select {
+                    background: #23272f;
+                    color: #f3f4f6;
+                    border: 1px solid #374151;
+                }
+
+/* Theme toggle sun icon black in dark mode */
+body.dark #themeToggleBox .fa-sun {
+    color: #f1f906 !important;
+}}
